@@ -1,0 +1,137 @@
+============================================
+        SENTRYLOG SECURITY ANALYZER
+============================================
+
+Analysis Time: Sunday 30 August 2026 12:16:14 PM IST
+
+Analyzing journal for security events...
+
+--------------------------------------------
+Failed Authentication Attempts
+--------------------------------------------
+
+[!] Authentication failures detected: 21
+
+Aug 29 11:55:12 localhost.localdomain sshd-session[4366]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1  user=katarai
+Aug 29 11:55:14 localhost.localdomain sshd-session[4366]: Failed password for katarai from ::1 port 35156 ssh2
+Aug 29 11:55:21 localhost.localdomain sshd-session[4366]: Failed password for katarai from ::1 port 35156 ssh2
+Aug 29 11:55:30 localhost.localdomain sshd-session[4366]: Failed password for katarai from ::1 port 35156 ssh2
+Aug 29 11:55:32 localhost.localdomain sshd-session[4366]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1  user=katarai
+Aug 29 15:00:57 localhost.localdomain sshd-session[5089]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1  user=katarai
+Aug 29 15:00:59 localhost.localdomain sshd-session[5089]: Failed password for katarai from ::1 port 60182 ssh2
+Aug 29 15:01:05 localhost.localdomain sshd-session[5089]: Failed password for katarai from ::1 port 60182 ssh2
+Aug 29 15:01:09 localhost.localdomain sshd-session[5089]: Failed password for katarai from ::1 port 60182 ssh2
+Aug 29 15:01:09 localhost.localdomain sshd-session[5089]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1  user=katarai
+Aug 30 08:41:15 localhost.localdomain sudo[6234]: pam_unix(sudo:auth): authentication failure; logname=katarai uid=1000 euid=0 tty=/dev/pts/0 ruser=katarai rhost=  user=katarai
+Aug 30 08:59:26 localhost.localdomain sshd-session[6593]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1  user=katarai
+Aug 30 08:59:29 localhost.localdomain sshd-session[6593]: Failed password for katarai from ::1 port 38566 ssh2
+Aug 30 08:59:38 localhost.localdomain sshd-session[6593]: Failed password for katarai from ::1 port 38566 ssh2
+Aug 30 08:59:45 localhost.localdomain sshd-session[6593]: Failed password for katarai from ::1 port 38566 ssh2
+Aug 30 08:59:45 localhost.localdomain sshd-session[6593]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1  user=katarai
+Aug 30 09:36:08 localhost.localdomain gdm-password][7063]: pam_unix(gdm-password:auth): authentication failure; logname=katarai uid=0 euid=0 tty=/dev/tty1 ruser= rhost=  user=katarai
+Aug 30 09:47:02 localhost.localdomain sentrylog.sh[7541]: Analyzing journal for authentication failures...
+Aug 30 09:47:04 localhost.localdomain sentrylog.sh[7541]: [!] Authentication failures detected: 0
+Aug 30 09:47:04 localhost.localdomain sentrylog.sh[7541]: No authentication failures detected.
+Aug 30 09:47:04 localhost.localdomain sentrylog.sh[7541]: Message: No authentication failures detected.
+
+--------------------------------------------
+Service Failures
+--------------------------------------------
+
+Service failures detected: 21
+
+Aug 29 11:10:29 localhost systemd[1]: run-vmblock\x2dfuse.mount: Failed with result 'exit-code'.
+Aug 29 11:10:29 localhost systemd[1]: Failed to mount run-vmblock\x2dfuse.mount - VMware vmblock Fuse Mount.
+Aug 29 11:10:29 localhost systemd-tmpfiles[1108]: Opening file "/tmp/.ICE-unix/1641" failed, proceeding without lock: No such device or address
+Aug 29 11:10:30 localhost systemd-tmpfiles[1108]: Opening file "/tmp/.ICE-unix/2643" failed, proceeding without lock: No such device or address
+Aug 29 11:10:30 localhost systemd-tmpfiles[1108]: Opening file "/tmp/.X11-unix/X1024" failed, proceeding without lock: No such device or address
+Aug 29 11:10:30 localhost systemd-tmpfiles[1108]: Opening file "/tmp/.X11-unix/X1025" failed, proceeding without lock: No such device or address
+Aug 29 11:10:30 localhost systemd-tmpfiles[1108]: Opening file "/tmp/.X11-unix/X0" failed, proceeding without lock: No such device or address
+Aug 29 11:10:30 localhost systemd-tmpfiles[1108]: Opening file "/tmp/.X11-unix/X1" failed, proceeding without lock: No such device or address
+Aug 29 11:10:30 localhost systemd[1]: mcelog.service: Main process exited, code=exited, status=1/FAILURE
+Aug 29 11:10:30 localhost systemd[1]: mcelog.service: Failed with result 'exit-code'.
+Aug 29 11:10:34 localhost.localdomain /usr/libexec/gdm-wayland-session[1603]: dbus-daemon[1603]: [session uid=42 pid=1603] Activated service 'org.freedesktop.systemd1' failed: Process org.freedesktop.systemd1 exited with status 1
+Aug 29 11:10:38 localhost.localdomain /usr/libexec/gdm-wayland-session[1603]: dbus-daemon[1603]: [session uid=42 pid=1603] Activated service 'org.freedesktop.systemd1' failed: Process org.freedesktop.systemd1 exited with status 1
+Aug 29 11:11:21 localhost.localdomain systemd[2561]: app-gnome-xdg\x2duser\x2ddirs-2711.scope: Failed with result 'resources'.
+Aug 29 11:11:21 localhost.localdomain systemd[2561]: Failed to start app-gnome-xdg\x2duser\x2ddirs-2711.scope - Application launched by gnome-session-binary.
+Aug 29 11:11:24 localhost.localdomain systemd[2561]: Dependency failed for org.gnome.SettingsDaemon.XSettings.service - GNOME XSettings service.
+Aug 29 11:11:24 localhost.localdomain systemd[2561]: org.gnome.SettingsDaemon.XSettings.service: Job org.gnome.SettingsDaemon.XSettings.service/start failed with result 'dependency'.
+Aug 29 11:11:24 localhost.localdomain systemd[2561]: gnome-session-x11-services-ready.target: Job gnome-session-x11-services-ready.target/verify-active failed with result 'dependency'.
+Aug 29 11:11:26 localhost.localdomain systemd[2561]: app-gnome-user\x2ddirs\x2dupdate\x2dgtk-2847.scope: Failed with result 'resources'.
+Aug 29 11:11:26 localhost.localdomain systemd[2561]: Failed to start app-gnome-user\x2ddirs\x2dupdate\x2dgtk-2847.scope - Application launched by gnome-session-binary.
+Aug 30 09:11:55 localhost.localdomain systemd[1]: sentrylog.service: Failed with result 'exit-code'.
+Aug 30 09:11:55 localhost.localdomain systemd[1]: Failed to start sentrylog.service - SentryLog Security Journal Analyzer.
+
+--------------------------------------------
+Priority ERR or Above
+--------------------------------------------
+
+Priority error-level entries detected: 24
+
+Aug 29 11:10:22 localhost kernel: [Firmware Bug]: cpu 0, try to use APIC520 (LVT offset 2) for vector 0xf4, but the register is already in use for vector 0x0 on this cpu
+Aug 29 11:10:22 localhost kernel: [Firmware Bug]: cpu 1, try to use APIC520 (LVT offset 2) for vector 0xf4, but the register is already in use for vector 0x0 on this cpu
+Aug 29 11:10:23 localhost kernel: Warning: Unmaintained driver is detected: cnic
+Aug 29 11:10:23 localhost kernel: Warning: Unmaintained driver is detected: cnic_init
+Aug 29 11:10:23 localhost kernel: Warning: Unmaintained driver is detected: bnx2i
+Aug 29 11:10:23 localhost kernel: Warning: Unmaintained driver is detected: bnx2i_mod_init
+Aug 29 11:10:29 localhost systemd[1]: Failed to mount run-vmblock\x2dfuse.mount - VMware vmblock Fuse Mount.
+Aug 29 11:10:30 localhost kernel: piix4_smbus 0000:00:07.3: SMBus base address uninitialized - upgrade BIOS or use force_addr=0xaddr
+Aug 29 11:10:32 localhost alsactl[1336]: alsa-lib main.c:1554:(snd_use_case_mgr_open) error: failed to import hw:0 use case configuration -2
+Aug 29 11:10:33 localhost.localdomain rsyslogd[1413]: imjournal: fscanf on state file `/var/lib/rsyslog/imjournal.state' failed  [v8.2506.0-2.el10 try https://www.rsyslog.com/e/2027 ]
+Aug 29 11:10:33 localhost.localdomain rsyslogd[1413]: imjournal: ignoring invalid state file /var/lib/rsyslog/imjournal.state [v8.2506.0-2.el10]
+Aug 29 11:11:10 localhost.localdomain gdm-password][2543]: gkr-pam: unable to locate daemon control file
+Aug 29 11:11:21 localhost.localdomain systemd[2561]: Failed to start app-gnome-xdg\x2duser\x2ddirs-2711.scope - Application launched by gnome-session-binary.
+Aug 29 11:11:26 localhost.localdomain systemd[2561]: Failed to start app-gnome-user\x2ddirs\x2dupdate\x2dgtk-2847.scope - Application launched by gnome-session-binary.
+Aug 29 15:47:46 localhost.localdomain gdm-password][5409]: pam_unix(gdm-password:auth): conversation failed
+Aug 29 15:47:46 localhost.localdomain gdm-password][5409]: pam_unix(gdm-password:auth): auth could not identify password for [katarai]
+Aug 29 16:09:23 localhost.localdomain gdm-password][5479]: pam_unix(gdm-password:auth): conversation failed
+Aug 29 16:09:23 localhost.localdomain gdm-password][5479]: pam_unix(gdm-password:auth): auth could not identify password for [katarai]
+Aug 30 09:11:55 localhost.localdomain (rylog.sh)[6951]: sentrylog.service: Failed at step EXEC spawning /home/katarai/sentrylog/scripts/sentrylog.sh: Permission denied
+Aug 30 09:11:55 localhost.localdomain systemd[1]: Failed to start sentrylog.service - SentryLog Security Journal Analyzer.
+Aug 30 09:11:58 localhost.localdomain setroubleshoot[6955]: SELinux is preventing /usr/lib/systemd/systemd-executor from execute access on the file sentrylog.sh. For complete SELinux messages run: sealert -l 9c54e6a5-c575-4709-9787-8074aa07d368
+Aug 30 09:36:08 localhost.localdomain gdm-password][7063]: gkr-pam: the password for the login keyring was invalid.
+Aug 30 09:47:02 localhost.localdomain sudo[7544]: pam_unix(sudo:auth): conversation failed
+Aug 30 09:47:02 localhost.localdomain sudo[7544]: pam_unix(sudo:auth): auth could not identify password for [katarai]
+
+--------------------------------------------
+Source IP Analysis
+--------------------------------------------
+
+Attempts by source:
+      9 ::1
+
+--------------------------------------------
+Suspicious Source Detection
+--------------------------------------------
+[SUSPICIOUS] ::1 - 9 failed attempts
+
+--------------------------------------------
+User Analysis
+--------------------------------------------
+     18 katarai
+
+--------------------------------------------
+Threat Severity Analysis
+--------------------------------------------
+Failure Count: 21
+Severity: CRITICAL
+Message: High number of authentication failures detected.
+
+--------------------------------------------
+Final Status
+--------------------------------------------
+Status: CRITICAL
+
+--------------------------------------------
+Recommended Actions
+--------------------------------------------
+1. Review the failed authentication attempts.
+2. Investigate the source IP addresses.
+3. Check whether the targeted user accounts are legitimate.
+4. Consider using SSH public-key authentication.
+5. Monitor the system for repeated authentication failures.
+
+============================================
+Analysis complete.
+Report saved to: /home/katarai/sentrylog/reports/sentrylog_report_2026-08-30.txt
+============================================

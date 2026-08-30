@@ -1,0 +1,50 @@
+==============================================
+        SENTRYLOG SECURITY ANALYZER
+==============================================
+
+Analysis Time: Sunday 30 August 2026 09:47:02 AM IST
+
+Analyzing journal for authentication failures...
+
+[!] Authentication failures detected: 0
+
+----------------------------------------------
+Failed Authentication Attempts
+----------------------------------------------
+No authentication failures detected.
+
+----------------------------------------------
+Source IP Analysis
+----------------------------------------------
+No source IP addresses found.
+
+----------------------------------------------
+Suspicious Source Detection
+----------------------------------------------
+No suspicious sources detected.
+
+----------------------------------------------
+User Analysis
+----------------------------------------------
+
+----------------------------------------------
+Threat Severity Analysis
+----------------------------------------------
+Failure Count: 0
+Severity: LOW
+Message: No authentication failures detected.
+
+----------------------------------------------
+Final Status
+----------------------------------------------
+Status: SYSTEM CLEAN
+
+----------------------------------------------
+Recommended Actions
+----------------------------------------------
+No immediate action required.
+
+==============================================
+Analysis complete.
+Report saved to: /home/katarai/sentrylog/reports/sentrylog_report.txt
+==============================================
